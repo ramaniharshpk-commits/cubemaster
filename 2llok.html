@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2-Look OLL | CubeMaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #111827;
+        }
+
+        nav h1 {
+            color: #22d3ee;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #22d3ee;
+        }
+
+        /* HEADER SECTION */
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .header h2 {
+            font-size: 40px;
+            color: #22d3ee;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* ALGORITHM SECTION */
+        .container {
+            padding: 50px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border: 1px solid #22d3ee;
+        }
+
+        .card h3 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-family: monospace;
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .case-type {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>CubeMaster</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="algori.html">Algorithms</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="header">
+        <h2>2-Look OLL</h2>
+        <p>Learn the essential algorithms to orient the last layer using the 2-Look OLL method.</p>
+    </section>
+
+    <section class="container">
+
+        <!-- EDGE ORIENTATION -->
+        <div class="card">
+            <div class="case-type">Edge Orientation</div>
+            <h3>Line Case</h3>
+            <p>F R U R' U' F'</p>
+        </div>
+
+        <div class="card">
+            <div class="case-type">Edge Orientation</div>
+            <h3>L-Shape Case</h3>
+            <p>F U R U' R' F'</p>
+        </div>
+
+        <!-- CORNER ORIENTATION -->
+        <div class="card">
+            <div class="case-type">Corner Orientation</div>
+            <h3>Sune</h3>
+            <p>R U R' U R U2 R'</p>
+        </div>
+
+        <div class="card">
+            <div class="case-type">Corner Orientation</div>
+            <h3>Anti-Sune</h3>
+            <p>R U2 R' U' R U' R'</p>
+        </div>
+
+        <div class="card">
+            <div class="case-type">Corner Orientation</div>
+            <h3>Headlights</h3>
+            <p>R2 D R' U2 R D' R' U2 R'</p>
+        </div>
+
+        <div class="card">
+            <div class="case-type">Corner Orientation</div>
+            <h3>Bowtie</h3>
+            <p>f R U R' U' f'</p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 CubeMaster | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

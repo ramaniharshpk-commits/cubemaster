@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | CubeMaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #111827;
+        }
+
+        nav h1 {
+            color: #22d3ee;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #22d3ee;
+        }
+
+        /* CONTACT SECTION */
+        .contact-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact-box {
+            background: #111827;
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 500px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-box h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #22d3ee;
+        }
+
+        .contact-box p {
+            margin-bottom: 30px;
+            color: #cbd5e1;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>CubeMaster</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="startl.html">Start Learning</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us on WhatsApp</h2>
+            <p>
+                Have questions about Rubik’s Cube tutorials or speed cubes?
+                Click below and chat with us instantly!
+            </p>
+
+            <!-- 🔥 REPLACE NUMBER BELOW -->
+            <a href="https://wa.me/923338734530" target="_blank" class="whatsapp-btn">
+                Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 CubeMaster | All Rights Reserved
+    </footer>
+</body>
+
+</html>

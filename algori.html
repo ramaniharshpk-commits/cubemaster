@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithms | CubeMaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #111827;
+        }
+
+        nav h1 {
+            color: #22d3ee;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #22d3ee;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            color: #22d3ee;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* CATEGORY SECTION */
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 28px;
+            color: #22d3ee;
+        }
+
+        .container {
+            padding: 40px 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border: 1px solid #22d3ee;
+        }
+
+        .card h3 {
+            color: #22d3ee;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            font-family: monospace;
+            font-size: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 18px;
+            background: #22d3ee;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #06b6d4;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: #94a3b8;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>CubeMaster</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="startl.html">Start Learning</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>CFOP Algorithms</h2>
+        <p>Master the essential algorithms used by speedcubers around the world.</p>
+    </section>
+
+    <!-- OLL SECTION -->
+    <h2 class="section-title">OLL Algorithms</h2>
+    <section class="container">
+
+        <div class="card">
+            <h3>2-Look OLL</h3>
+            <p>Beginner-friendly method to orient last layer.</p>
+            <a href="2look-oll.html" class="btn">View Algorithms</a>
+        </div>
+
+        <div class="card">
+            <h3>Full OLL</h3>
+            <p>57 algorithms to orient the entire last layer.</p>
+            <a href="#" class="btn">Coming Soon</a>
+        </div>
+
+    </section>
+
+    <!-- PLL SECTION -->
+    <h2 class="section-title">PLL Algorithms</h2>
+    <section class="container">
+
+        <div class="card">
+            <h3>T-Perm</h3>
+            <p>R U R' U' R' F R2 U' R' U' R U R' F'</p>
+        </div>
+
+        <div class="card">
+            <h3>Y-Perm</h3>
+            <p>F R U' R' U' R U R' F' R U R' U' R' F R F'</p>
+        </div>
+
+        <div class="card">
+            <h3>U-Perm</h3>
+            <p>R U R' U R U2 R'</p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 CubeMaster | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
